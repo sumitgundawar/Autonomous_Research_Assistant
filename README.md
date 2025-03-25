@@ -24,7 +24,7 @@ An AI-powered system that automates research, analysis, and report generation us
 ## 🛠️ How It Works
 
 ```mermaid
-graph TD
+flowchart TD
     A[User Query] --> B(Researcher Agent)
     B --> C[Raw Data]
     C --> D(Analyst Agent)
@@ -33,57 +33,67 @@ graph TD
     F --> G[Structured Report]
     G --> H(Reviewer Agent)
     H --> I[Final Output]
+```
 
-🚀 Installation
+## 🚀 Installation
 1. Clone the repository:
-
+```bash
 git clone https://github.com/yourusername/autonomous-research-assistant.git
 cd autonomous-research-assistant
+```
 
 2. Set up environment:
-
+```bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate  # Windows
+```
 
 3. Install dependencies:
-
+```bash
 pip install -r requirements.txt
+```
 
 4. Configure API keys:
 Create .env file:
-
+```
 GOOGLE_API_KEY="your_api_key"
-# Optional:
+Optional:
 SERPAPI_API_KEY="your_key"  # For web searches
+```
 
-🖥️ Usage
+## 🖥️ Usage
 1. Run locally:
-
+```bash
 streamlit run app/main.py
+```
 
 2. Docker deployment:
-
+```bash
 docker build -t research-assistant .
 docker run -p 8501:8501 --env-file .env research-assistant
+```
 
-🧪 Testing
+## 🧪 Testing
+```bash
 pytest tests/ -v
+```
 
-🤝 Contributing
+## 🤝 Contributing
 We welcome contributions! Please follow these steps:
-
+```
 1. Fork the repository
 2. Create a feature branch (git checkout -b feature/your-feature)
 3. Commit changes (git commit -m 'Add some feature')
 4. Push to branch (git push origin feature/your-feature)
 5. Open a Pull Request
+```
 
-📜 License
+## 📜 License
 MIT License - See LICENSE for details.
 
-📊 Project Structure
-Copy
+## 📊 Project Structure
+```plaintext
 autonomous-research-assistant/
 ├── agents/
 │   ├── researcher.py
@@ -98,13 +108,14 @@ autonomous-research-assistant/
 ├── .env.example         # API key template
 ├── Dockerfile
 └── requirements.txt
+```
 
-📈 Future Enhancements
-
-Add live web search integration
-Implement agent debate system
-Support PDF report generation
-Add user feedback mechanism
-
+## 📈 Future Enhancements
+```
+- Add live web search integration
+- Implement agent debate system
+- Support PDF report generation
+- Add a user feedback mechanism
+```
 
 Made with ❤️ by Sumit
